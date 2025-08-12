@@ -1,4 +1,34 @@
 ---
-layout: home
-author_profile: true
+layout: splash
+title: "Bienvenue chez DST Consulting"
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/header-bg.jpg
+  actions:
+    - label: "Découvrir nos services"
+      url: "/services/"
+excerpt: "Votre partenaire de confiance pour vos projets de conseil"
+
+feature_row:
+  - image_path: /assets/images/service1.jpg
+    title: "Service 1"
+    excerpt: "Description de votre premier service"
+    url: "/services/"
+    btn_label: "En savoir plus"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/service2.jpg
+    title: "Service 2" 
+    excerpt: "Description de votre deuxième service"
+    url: "/services/"
+    btn_label: "En savoir plus"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/service3.jpg
+    title: "Service 3"
+    excerpt: "Description de votre troisième service"
+    url: "/services/"
+    btn_label: "En savoir plus"
+    btn_class: "btn--primary"
 ---
+
+{% include feature_row %}
