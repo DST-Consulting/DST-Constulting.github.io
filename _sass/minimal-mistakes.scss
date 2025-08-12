@@ -35,3 +35,85 @@
 @import "minimal-mistakes/archive";
 @import "minimal-mistakes/sidebar";
 @import "minimal-mistakes/print";
+
+/* Styles pour la page Réalisations */
+
+.feature__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.feature__item {
+  flex: 1 1 300px;
+  min-width: 300px;
+}
+
+/* Statistiques en grand */
+.archive__item-title {
+  font-size: 3rem !important;
+  font-weight: 700;
+  color: $primary-color;
+  margin-bottom: 0.5rem;
+}
+
+/* Tableau des secteurs */
+table {
+  margin: 2rem 0;
+  
+  th {
+    background-color: $primary-color;
+    color: white;
+    font-weight: 600;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Témoignages en style blockquote */
+blockquote {
+  border-left: 4px solid $primary-color;
+  padding-left: 1rem;
+  font-style: italic;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  margin: 2rem 0;
+  
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Sections avec émojis */
+h3 {
+  margin-top: 2rem;
+  
+  &:first-child {
+    margin-top: 1rem;
+  }
+}
+
+/* Boutons call-to-action */
+.btn--large {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+}
+
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+  .feature__wrapper {
+    flex-direction: column;
+  }
+  
+  .feature__item {
+    min-width: 100%;
+  }
+  
+  .archive__item-title {
+    font-size: 2rem !important;
+  }
+}
